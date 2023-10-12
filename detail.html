@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: 100vh; */
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: linear-gradient(to bottom, #1abc9c, #48cfad);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 50px;
+            text-align: center;
+           
+        }
+
+        .checkout-form {
+            text-align: left;
+        }
+
+        .checkout-form h2 {
+            font-size: 24px;
+            margin: 20px 0 10px;
+            color: palevioletred;
+        }
+
+        .checkout-form label {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .checkout-form input, .checkout-form select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .checkout-form button {
+            background-color: palevioletred;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 24px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-form button:hover {
+            background-color: palevioletred;
+        }
+
+        .instruction {
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: center;
+            color: #555;
+        }
+
+        /* Custom styling for form elements */
+        input[type="text"], select {
+            background-color: #f8f8f8;
+        }
+
+        button {
+            background-color: palevioletred;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 24px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <form class="checkout-form" >
+            <h2>Shipping Address</h2>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" required>
+
+            <label for="zipCode">Zip Code</label>
+            <input type="text" id="zipCode" required>
+
+            <label for="state">State</label>
+            <input type="text" id="state" required>
+           
+
+            <h2>Payment Details</h2>
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+            <label for="cardName">Name on Card</label>
+            <input type="text" id="cardName" required>
+
+            <label for="expDate">Expiration Date</label>
+            <input type="text" id="expDate" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" required>
+
+          <button class="Check"> <a href="./buy.html">  complete Purchase</a></button>
+
+        </form>
+        <p class="instruction">Please fill in your shipping address and payment details to complete your purchase.</p>
+    </div>
+</body>
+</html>
